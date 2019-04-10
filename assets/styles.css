@@ -1,0 +1,37 @@
+.single-product table.variations {
+	display: none;
+}
+
+.single-product form.variations_form ul.visual-variations {
+	display: flex;
+	list-style-type: none;
+	margin: 10px 0;
+}
+
+.single-product form.variations_form ul.visual-variations li {
+	width: 56px;
+	margin: 5px;
+}
+
+.single-product:not(.rtl) form.variations_form ul.visual-variations li:first-child {
+	margin-left: 0;
+}
+
+.single-product.rtl form.variations_form ul.visual-variations li:first-child {
+	margin-right: 0;
+}
+
+.single-product form.variations_form ul.visual-variations li button {
+	padding: 5px;
+	margin: 0;
+	border: 1px solid #f2f2f2;
+	background-color: transparent;
+	cursor: pointer;
+	transition: border-color .3s ease;
+}
+
+.single-product form.variations_form ul.visual-variations li button:hover,
+.single-product form.variations_form ul.visual-variations li button:focus,
+.single-product form.variations_form ul.visual-variations li button.active {
+	border-color: #cccccc;
+}
